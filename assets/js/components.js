@@ -19,7 +19,7 @@ const NAVBAR_HTML = `
     <div class="flex items-center gap-4">
       <a href="mandatory-disclosures/index.html" class="hover:text-blue-300">Mandatory Disclosures</a>
       <span class="text-gray-500">|</span>
-      <a href="alumni.html" class="hover:text-blue-300">Alumni</a>
+      <a href="alumni/index.html" class="hover:text-blue-300">Alumni</a>
       <span class="text-gray-500">|</span>
       <a href="contact.html" class="hover:text-blue-300">Contact Us</a>
     </div>
@@ -54,16 +54,16 @@ const NAVBAR_HTML = `
           <div role="menu"
             class="absolute left-0 mt-0 w-56 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
             <div class="py-2">
-              <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Vision & Mission</a>
-              <a href="about.html#management" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Management</a>
-              <a href="about.html#principal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Principal</a>
-              <a href="about.html#accreditation" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Accreditation</a>
+              <a href="about/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Vision & Mission</a>
+              <a href="about/index.html#management" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Management</a>
+              <a href="about/index.html#principal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Principal</a>
+              <a href="about/index.html#accreditation" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Accreditation</a>
             </div>
           </div>
         </div>
 
         <a href="admissions.html" class="px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Admissions</a>
-        <a href="academics.html" class="px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Academics</a>
+        <a href="academics/index.html" class="px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Academics</a>
 
         <!-- Departments Mega Menu -->
         <div class="relative group" data-dropdown>
@@ -74,49 +74,49 @@ const NAVBAR_HTML = `
           <div role="menu"
             class="absolute left-0 mt-0 w-[640px] bg-white border border-gray-100 shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100] p-4">
             <div class="grid grid-cols-2 gap-2">
-              <a href="departments/cse.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
+              <a href="departments/cse/index.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
                 <div class="w-9 h-9 rounded-lg bg-blue-100 flex items-center justify-center"><i data-lucide="cpu" class="w-5 h-5 text-blue-700"></i></div>
                 <div>
                   <div class="text-sm font-semibold text-gray-800">Computer Science (CSE)</div>
                   <div class="text-[11px] text-gray-500">B.Tech</div>
                 </div>
               </a>
-              <a href="departments/ai.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
+              <a href="departments/ai/index.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
                 <div class="w-9 h-9 rounded-lg bg-violet-100 flex items-center justify-center"><i data-lucide="brain" class="w-5 h-5 text-violet-700"></i></div>
                 <div>
                   <div class="text-sm font-semibold text-gray-800">CSE (AI & ML)</div>
                   <div class="text-[11px] text-gray-500">B.Tech</div>
                 </div>
               </a>
-              <a href="departments/ece.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
+              <a href="departments/ece/index.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
                 <div class="w-9 h-9 rounded-lg bg-amber-100 flex items-center justify-center"><i data-lucide="radio" class="w-5 h-5 text-amber-700"></i></div>
                 <div>
                   <div class="text-sm font-semibold text-gray-800">Electronics (ECE)</div>
                   <div class="text-[11px] text-gray-500">B.Tech</div>
                 </div>
               </a>
-              <a href="departments/eee.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
+              <a href="departments/eee/index.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
                 <div class="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center"><i data-lucide="zap" class="w-5 h-5 text-emerald-700"></i></div>
                 <div>
                   <div class="text-sm font-semibold text-gray-800">Electrical (EEE)</div>
                   <div class="text-[11px] text-gray-500">B.Tech</div>
                 </div>
               </a>
-              <a href="departments/ce.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
+              <a href="departments/ce/index.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
                 <div class="w-9 h-9 rounded-lg bg-sky-100 flex items-center justify-center"><i data-lucide="ruler" class="w-5 h-5 text-sky-700"></i></div>
                 <div>
                   <div class="text-sm font-semibold text-gray-800">Civil (CE)</div>
                   <div class="text-[11px] text-gray-500">B.Tech</div>
                 </div>
               </a>
-              <a href="departments/me.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
+              <a href="departments/me/index.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
                 <div class="w-9 h-9 rounded-lg bg-rose-100 flex items-center justify-center"><i data-lucide="cog" class="w-5 h-5 text-rose-700"></i></div>
                 <div>
                   <div class="text-sm font-semibold text-gray-800">Mechanical (ME)</div>
                   <div class="text-[11px] text-gray-500">B.Tech</div>
                 </div>
               </a>
-              <a href="departments/mba.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
+              <a href="departments/mba/index.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50">
                 <div class="w-9 h-9 rounded-lg bg-indigo-100 flex items-center justify-center"><i data-lucide="briefcase" class="w-5 h-5 text-indigo-700"></i></div>
                 <div>
                   <div class="text-sm font-semibold text-gray-800">Management (MBA/MCA)</div>
@@ -156,10 +156,10 @@ const NAVBAR_HTML = `
   <div id="mobile-menu" class="xl:hidden hidden bg-gray-50 border-t border-gray-100 pb-6 px-4">
     <div class="py-4 flex flex-col space-y-2">
       <a href="index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Home</a>
-      <a href="about.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">About Us</a>
+      <a href="about/index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">About Us</a>
       <a href="admissions.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Admissions</a>
       <a href="departments/ai.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Departments</a>
-      <a href="placements.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Placements</a>
+      <a href="placements/index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Placements</a>
       <a href="student-portal/index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Student Portal</a>
       <a href="admissions.html" class="mx-4 mt-2 bg-blue-600 text-white px-6 py-3 rounded-xl text-center font-bold">Apply Now</a>
     </div>
@@ -197,14 +197,14 @@ const FOOTER_HTML = `
         </div>
       </div>
 
-      <!-- Quick Links -->
+        <!-- Quick Links -->
       <div>
         <h4 class="text-white font-bold text-lg mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-blue-600">Quick Links</h4>
         <ul class="space-y-4 text-sm">
-          <li><a href="about.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> About Us</a></li>
+          <li><a href="about/index.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> About Us</a></li>
           <li><a href="admissions.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Admissions</a></li>
-          <li><a href="academics.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Academics</a></li>
-          <li><a href="placements.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Placements</a></li>
+          <li><a href="academics/index.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Academics</a></li>
+          <li><a href="placements/index.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Placements</a></li>
           <li><a href="contact.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Contact Us</a></li>
         </ul>
       </div>
@@ -213,11 +213,11 @@ const FOOTER_HTML = `
       <div>
         <h4 class="text-white font-bold text-lg mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-blue-600">Academics</h4>
         <ul class="space-y-4 text-sm">
-          <li><a href="courses.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> B.Tech Programs</a></li>
-          <li><a href="courses.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Post Graduation</a></li>
+          <li><a href="courses/index.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> B.Tech Programs</a></li>
+          <li><a href="courses/index.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Post Graduation</a></li>
           <li><a href="exam-cell.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Exam Cell</a></li>
-          <li><a href="library.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Library</a></li>
-          <li><a href="facilities.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Campus Facilities</a></li>
+          <li><a href="library/index.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Library</a></li>
+          <li><a href="facilities/index.html" class="hover:text-blue-500 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-blue-600"></i> Campus Facilities</a></li>
         </ul>
       </div>
 
@@ -257,10 +257,40 @@ const FOOTER_HTML = `
 // Inject components on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   // Determine rootPath for nested routes
-  const path = window.location.pathname;
-  const isDept = /\/departments\//.test(path);
-  const isNested = /(\/[^\/]+\/){1,}/.test(path) && !/\/index\.html$/.test(path);
-  const rootPath = isDept || isNested ? '../' : './';
+  // Determine rootPath for nested routes
+  // Prioritize global rootPath if set (for static file deployments)
+  // Determine rootPath for nested routes
+  const rootPath = window.rootPath !== undefined ? window.rootPath : (
+    (() => {
+      const path = window.location.pathname;
+      // For file:// support on windows, normalize slashes and remove drive letter if present
+      const normalizedPath = path.replace(/\\/g, '/').replace(/^[A-Z]:/i, '');
+      const segments = normalizedPath.split('/').filter(s => s.length > 0);
+
+      // If the path ends with .html, the last segment is the file.
+      // We need to count segments *before* the file.
+      // E.g., /project/about/index.html -> [project, about, index.html]
+      // We need to know how many steps to get back to the root (where index.html is)
+
+      // Find the project root index. We assume 'kvsrithtml' is a root-level marker or calculate based on depth.
+      // A better way: check if we are in a known nested structure.
+      const isDept = /\/departments\//.test(normalizedPath);
+      const isAbout = /\/about\//.test(normalizedPath);
+      const isAcademics = /\/academics\//.test(normalizedPath);
+      const isCampus = /\/campus-life\//.test(normalizedPath);
+      const isPlacements = /\/placements\//.test(normalizedPath);
+      const isStudentPortal = /\/student-portal\//.test(normalizedPath);
+
+      // Multi-level nesting check (e.g. departments/cse/index.html)
+      const deptMatch = normalizedPath.match(/\/departments\/([^\/]+)\//);
+      if (deptMatch) return '../../';
+
+      if (isDept || isAbout || isAcademics || isCampus || isPlacements || isStudentPortal) {
+        return '../';
+      }
+      return './';
+    })()
+  );
 
   const navPlaceholder = document.getElementById('navbar-placeholder');
   const footerPlaceholder = document.getElementById('footer-placeholder');
@@ -270,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
     adjustLinks(navPlaceholder, rootPath);
     initMobileMenu();
     highlightActive(navPlaceholder, rootPath);
-        initSearchOverlay();
+    initSearchOverlay();
     initDropdownA11y();
   }
 
@@ -282,6 +312,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Refresh icons
   if (window.lucide && typeof window.lucide.createIcons === 'function') {
     window.lucide.createIcons();
+  }
+
+  // Header Scroll Effect
+  const header = document.getElementById('main-header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        header.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
+        header.classList.remove('bg-white', 'shadow-md');
+      } else {
+        header.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
+        header.classList.add('bg-white', 'shadow-md');
+      }
+    });
   }
 });
 
