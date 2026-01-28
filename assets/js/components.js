@@ -33,7 +33,7 @@ const NAVBAR_HTML = `
       <!-- Logo -->
       <div class="flex-shrink-0 flex items-center">
         <a href="index.html" class="flex items-center gap-4 group">
-          <img src="images/logo.png" alt="KVSRIT Logo" class="h-17">
+          <img src="images/logo.png" alt="KVSRIT Logo" class="h-12 md:h-16">
           <div class="hidden lg:block">
             <h1 class="text-lg font-bold text-blue-900 leading-tight">KVSRIT</h1>
             <p class="text-[10px] text-gray-500 font-medium uppercase tracking-tight">Dr. K.V. Subba Reddy Institute of Technology</p>
@@ -52,18 +52,56 @@ const NAVBAR_HTML = `
             About Us <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform"></i>
           </button>
           <div role="menu"
-            class="absolute left-0 mt-0 w-56 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
+            class="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
             <div class="py-2">
-              <a href="about/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Vision & Mission</a>
-              <a href="about/index.html#management" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Management</a>
-              <a href="about/index.html#principal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Principal</a>
-              <a href="about/index.html#accreditation" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Accreditation</a>
+              <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">About Us</a>
+              <a href="vision-mission-quality-policy/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Vision & Mission</a>
+              <a href="affiliation-and-accreditation/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Affiliation and Accreditation</a>
+              <a href="about.html#management" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Management</a>
+              <a href="about.html#principal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Principal</a>
+              <a href="administration/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Administration</a>
+              <a href="leadership/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Governing Body</a>
+              <a href="academic-council/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Academic Council</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Service Rules</a>
             </div>
           </div>
         </div>
 
-        <a href="admissions.html" class="px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Admissions</a>
-        <a href="academics/index.html" class="px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Academics</a>
+        <!-- Admissions Dropdown -->
+        <div class="relative group" data-dropdown>
+          <button aria-haspopup="true" aria-expanded="false"
+            class="flex items-center gap-1 px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 group focus:outline-none">
+            Admissions <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform"></i>
+          </button>
+          <div role="menu"
+            class="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
+            <div class="py-2">
+              <a href="admissions.html#procedure" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Admissions Procedure</a>
+              <a href="admissions.html#criteria" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Criteria for Admission</a>
+              <a href="admissions.html#programs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Programs Offered</a>
+              <a href="admissions.html#fee" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Fee Structure</a>
+              <a href="admissions.html#scholarships" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Scholarships</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academics Dropdown -->
+        <div class="relative group" data-dropdown>
+          <button aria-haspopup="true" aria-expanded="false"
+            class="flex items-center gap-1 px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 group focus:outline-none">
+            Academics <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform"></i>
+          </button>
+          <div role="menu"
+            class="absolute left-0 mt-0 w-80 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
+            <div class="py-2">
+              <a href="academics/index.html#calendar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Academic Calendar</a>
+              <a href="academics/index.html#regulations" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Regulations and Syllabus</a>
+              <a href="academics/index.html#exam-cell" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Exam Cell</a>
+              <a href="research/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Research & Development</a>
+              <a href="iqac/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">IQAC</a>
+            </div>
+          </div>
+        </div>
 
         <!-- Departments Mega Menu -->
         <div class="relative group" data-dropdown>
@@ -127,8 +165,39 @@ const NAVBAR_HTML = `
           </div>
         </div>
 
-        <a href="placements.html" class="px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Placements</a>
-        <a href="campus-life/index.html" class="px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Campus Life</a>
+        <!-- Placements Dropdown -->
+        <div class="relative group" data-dropdown>
+          <button aria-haspopup="true" aria-expanded="false"
+            class="flex items-center gap-1 px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 group focus:outline-none">
+            Placements <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform"></i>
+          </button>
+          <div role="menu"
+            class="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
+            <div class="py-2">
+              <a href="placements/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">About T&P</a>
+              <a href="placements/index.html#record" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Placement Record</a>
+              <a href="placements/index.html#internships" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Internships</a>
+              <a href="placements/index.html#news" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">News And Events</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campus Life Dropdown -->
+        <div class="relative group" data-dropdown>
+          <button aria-haspopup="true" aria-expanded="false"
+            class="flex items-center gap-1 px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 group focus:outline-none">
+            Campus Life <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform"></i>
+          </button>
+          <div role="menu"
+            class="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
+            <div class="py-2">
+              <a href="facilities/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Facilities</a>
+              <a href="campus-life/index.html#infrastructure" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Infrastructure</a>
+              <a href="campus-life/index.html#events" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Events</a>
+              <a href="campus-life/index.html#gallery" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Gallery</a>
+            </div>
+          </div>
+        </div>
 
         <!-- Right Actions -->
         <div class="flex items-center gap-2 pl-2 ml-2 border-l border-gray-100">
@@ -156,9 +225,9 @@ const NAVBAR_HTML = `
   <div id="mobile-menu" class="xl:hidden hidden bg-gray-50 border-t border-gray-100 pb-6 px-4">
     <div class="py-4 flex flex-col space-y-2">
       <a href="index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Home</a>
-      <a href="about/index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">About Us</a>
+      <a href="about.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">About Us</a>
       <a href="admissions.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Admissions</a>
-      <a href="departments/ai.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Departments</a>
+      <a href="departments/index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Departments</a>
       <a href="placements/index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Placements</a>
       <a href="student-portal/index.html" class="px-4 py-3 text-base font-semibold text-gray-700 hover:bg-blue-50 rounded-lg">Student Portal</a>
       <a href="admissions.html" class="mx-4 mt-2 bg-blue-600 text-white px-6 py-3 rounded-xl text-center font-bold">Apply Now</a>
@@ -185,7 +254,7 @@ const FOOTER_HTML = `
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
       <!-- College Info -->
       <div class="space-y-6">
-        <img src="images/logo.png" alt="KVSRIT Logo" class="h-16 brightness-0 invert">
+        <img src="images/logo.png" alt="KVSRIT Logo" class="h-16">
         <p class="text-sm leading-relaxed text-gray-400">
           Dr. K.V. Subba Reddy Institute of Technology (KVSRIT) is established in 2007 with a mission to produce high-quality engineering professionals.
         </p>

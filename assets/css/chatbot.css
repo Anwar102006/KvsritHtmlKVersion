@@ -38,10 +38,11 @@
     background: #1e40af;
 }
 
-.chat-widget-toggle svg {
-    width: 30px;
-    height: 30px;
-    color: white;
+.chat-widget-toggle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Chat Window */
@@ -87,13 +88,21 @@
 }
 
 .chat-bot-avatar {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chat-bot-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .chat-bot-name {
@@ -143,8 +152,15 @@
 }
 
 @keyframes messageIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .bot-message {
@@ -209,14 +225,33 @@
     animation: typing 1s infinite;
 }
 
-.typing-indicator span:nth-child(1) { animation-delay: 0s; }
-.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
-.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+.typing-indicator span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
 
 @keyframes typing {
-    0% { transform: translateY(0px); opacity: 0.4; }
-    50% { transform: translateY(-5px); opacity: 1; }
-    100% { transform: translateY(0px); opacity: 0.4; }
+    0% {
+        transform: translateY(0px);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 0.4;
+    }
 }
 
 /* Chat Input Area */
@@ -275,7 +310,7 @@
         bottom: 90px;
         right: 20px;
     }
-    
+
     .chat-widget-toggle {
         bottom: 20px;
         right: 20px;
