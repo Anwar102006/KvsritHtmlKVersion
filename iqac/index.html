@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IQAC - KVSRIT</title>
     <meta name="description"
-        content="Internal Quality Assurance Cell (IQAC) at KVSRIT ensures quality enhancement and sustenance in academic and administrative activities.">    <!-- Converted CSS (Tailwind to pure CSS) -->
-    <link rel="stylesheet" href="../css/tailwind-converted.css">
+        content="Internal Quality Assurance Cell (IQAC) at KVSRIT ensures quality enhancement and sustenance in academic and administrative activities.">
+    <!-- Converted CSS (Tailwind to pure CSS) -->
+    <link rel="stylesheet" href="../css/core.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -15,14 +16,16 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar-enhanced.css">
 
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 
 <body>
     <div id="app">
         <!-- Header Injected Here -->
+        <div id="navbar-placeholder"></div>
 
         <main>
             <div class="min-h-screen bg-gray-50">
@@ -71,7 +74,13 @@
                                 <div class="flex items-center gap-3 mb-6">
                                     <div
                                         class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
-                                        <i data-lucide="target" class="w-5 h-5"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <circle cx="12" cy="12" r="6" />
+                                            <circle cx="12" cy="12" r="2" />
+                                        </svg>
                                     </div>
                                     <h2 class="text-2xl font-bold text-gray-900">Objectives</h2>
                                 </div>
@@ -97,7 +106,13 @@
                                 <div class="flex items-center gap-3 mb-6">
                                     <div
                                         class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                                        <i data-lucide="settings" class="w-5 h-5"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                            <path
+                                                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.09a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>
                                     </div>
                                     <h2 class="text-2xl font-bold text-gray-900">Functions</h2>
                                 </div>
@@ -132,7 +147,14 @@
                                 <div class="flex items-center gap-3 mb-6">
                                     <div
                                         class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
-                                        <i data-lucide="users" class="w-5 h-5"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                            <circle cx="9" cy="7" r="4" />
+                                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                        </svg>
                                     </div>
                                     <h2 class="text-2xl font-bold text-gray-900">IQAC Composition</h2>
                                 </div>
@@ -169,7 +191,15 @@
                                 <div class="flex items-center gap-3 mb-6">
                                     <div
                                         class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600">
-                                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                            <path d="M14 2v4h4" />
+                                            <path d="M10 9H8" />
+                                            <path d="M16 13H8" />
+                                            <path d="M16 17H8" />
+                                        </svg>
                                     </div>
                                     <h2 class="text-2xl font-bold text-gray-900">AQAR Reports</h2>
                                 </div>
@@ -180,8 +210,14 @@
                                             <div class="font-semibold text-gray-900">AQAR 2022-23</div>
                                             <div class="text-xs text-gray-500 mt-1">Uploaded: Nov 2023</div>
                                         </div>
-                                        <i data-lucide="download"
-                                            class="w-5 h-5 text-gray-400 group-hover:text-blue-600"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="w-5 h-5 text-gray-400 group-hover:text-blue-600">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" x2="12" y1="15" y2="3" />
+                                        </svg>
                                     </a>
                                     <a href="#"
                                         class="flex items-center justify-between p-4 rounded-lg border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all group">
@@ -189,8 +225,14 @@
                                             <div class="font-semibold text-gray-900">AQAR 2021-22</div>
                                             <div class="text-xs text-gray-500 mt-1">Uploaded: Nov 2022</div>
                                         </div>
-                                        <i data-lucide="download"
-                                            class="w-5 h-5 text-gray-400 group-hover:text-blue-600"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="w-5 h-5 text-gray-400 group-hover:text-blue-600">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" x2="12" y1="15" y2="3" />
+                                        </svg>
                                     </a>
                                 </div>
                             </section>
@@ -200,7 +242,12 @@
                                 <div class="flex items-center gap-3 mb-6">
                                     <div
                                         class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
-                                        <i data-lucide="clock" class="w-5 h-5"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <polyline points="12 6 12 12 16 14" />
+                                        </svg>
                                     </div>
                                     <h2 class="text-2xl font-bold text-gray-900">Minutes of Meetings</h2>
                                 </div>
@@ -208,7 +255,13 @@
                                     <div
                                         class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 border-b border-gray-100 border-opacity-50">
                                         <div class="flex items-center gap-3">
-                                            <i data-lucide="file" class="w-4 h-4 text-gray-400"></i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="w-4 h-4 text-gray-400">
+                                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                                <path d="M14 2v4h4" />
+                                            </svg>
                                             <span class="text-gray-700">Meeting Minutes - June 2024</span>
                                         </div>
                                         <a href="#" class="text-blue-600 hover:underline text-sm font-medium">View</a>
@@ -216,7 +269,13 @@
                                     <div
                                         class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 border-b border-gray-100 border-opacity-50">
                                         <div class="flex items-center gap-3">
-                                            <i data-lucide="file" class="w-4 h-4 text-gray-400"></i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="w-4 h-4 text-gray-400">
+                                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                                <path d="M14 2v4h4" />
+                                            </svg>
                                             <span class="text-gray-700">Meeting Minutes - December 2023</span>
                                         </div>
                                         <a href="#" class="text-blue-600 hover:underline text-sm font-medium">View</a>
@@ -231,13 +290,14 @@
         </main>
 
         <!-- Footer Injected Here -->
+        <div id="footer-placeholder"></div>
     </div>
 
     <!-- Core Scripts -->
-    <script src="../js/data.js"></script>
-    <script src="../js/components.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/components.js"></script>
     <script>window.rootPath = '../';</script>
-    <script src="../js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

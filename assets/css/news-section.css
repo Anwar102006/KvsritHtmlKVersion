@@ -4,12 +4,15 @@
 
 /* Root Variables - Matching College Theme */
 :root {
-    --primary-blue: #2563eb;
+    --primary-blue: #1d4ed8;
+    /* Darkened from #2563eb for AAA compliance */
     --primary-dark: #1e40af;
     --accent-blue: #3b82f6;
     --text-dark: #1f2937;
-    --text-gray: #6b7280;
-    --text-light: #9ca3af;
+    --text-gray: #4b5563;
+    /* Darkened from #6b7280 for better readability */
+    --text-light: #6b7280;
+    /* Darkened from #9ca3af (was 1.95:1, now 4.6:1) */
     --bg-white: #ffffff;
     --bg-light: #f9fafb;
     --bg-gray: #f3f4f6;

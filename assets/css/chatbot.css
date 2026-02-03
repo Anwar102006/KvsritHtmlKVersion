@@ -188,7 +188,8 @@
 .quick-reply-btn {
     background: #eff6ff;
     border: 1px solid #dbeafe;
-    color: var(--chat-primary);
+    color: #1d4ed8;
+    /* Blue 700 - Compliant contrast */
     padding: 8px 14px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -270,6 +271,13 @@
     outline: none;
     font-size: 0.95rem;
     transition: var(--chat-transition);
+    color: var(--chat-text);
+}
+
+.chat-input::placeholder {
+    color: #4b5563;
+    /* Gray 600 - Compliant contrast */
+    opacity: 1;
 }
 
 .chat-input:focus {

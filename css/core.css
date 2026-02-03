@@ -1,10 +1,10 @@
 /* ========================================
-   Tailwind CSS to Pure CSS Conversion
+   Core Site Styles (Color & Utility System)
    KVSRIT College Website
    ======================================== */
 
 /* ========================================
-   CSS VARIABLES - Tailwind Color Palette
+   CSS VARIABLES - Design System Palette
    ======================================== */
 :root {
     /* Primary Colors (Blue) */
@@ -73,6 +73,20 @@
 
     /* White */
     --white: #ffffff;
+
+    /* Accessibility Overrides (WCAG AA Compliant) */
+    --text-accessible-blue: #1d4ed8;
+    /* blue-700 */
+    --text-accessible-emerald: #047857;
+    /* emerald-700 */
+    --text-accessible-amber: #b45309;
+    /* amber-700 */
+    --text-accessible-cyan: #0e7490;
+    /* cyan-700 */
+    --text-accessible-orange: #c2410c;
+    /* orange-700 */
+    --text-accessible-gray-iso: #4b5563;
+    /* gray-600 for icons/light-text */
 }
 
 /* ========================================
@@ -912,7 +926,8 @@ a {
 }
 
 .text-gray-400 {
-    color: var(--gray-400);
+    color: var(--text-accessible-gray-iso);
+    /* Was gray-400, increased contrast for visibility */
 }
 
 .text-gray-500 {
@@ -952,7 +967,8 @@ a {
 }
 
 .text-blue-600 {
-    color: var(--blue-600);
+    color: var(--text-accessible-blue);
+    /* Was blue-600, shifted to 700 for contrast */
 }
 
 .text-blue-900 {
@@ -964,19 +980,19 @@ a {
 }
 
 .text-emerald-500 {
-    color: var(--emerald-500);
+    color: var(--text-accessible-emerald);
 }
 
 .text-emerald-600 {
-    color: var(--emerald-600);
+    color: var(--text-accessible-emerald);
 }
 
 .text-amber-500 {
-    color: var(--amber-500);
+    color: var(--text-accessible-amber);
 }
 
 .text-amber-600 {
-    color: var(--amber-600);
+    color: var(--text-accessible-amber);
 }
 
 .text-indigo-600 {
@@ -984,11 +1000,11 @@ a {
 }
 
 .text-cyan-600 {
-    color: var(--cyan-600);
+    color: var(--text-accessible-cyan);
 }
 
 .text-orange-600 {
-    color: var(--orange-600);
+    color: var(--text-accessible-orange);
 }
 
 /* Opacity text colors */
@@ -1367,7 +1383,7 @@ a {
 }
 
 .group:hover .group-hover\:text-blue-600 {
-    color: var(--blue-600);
+    color: var(--text-accessible-blue);
 }
 
 .group:hover .group-hover\:text-indigo-600 {
@@ -1375,15 +1391,15 @@ a {
 }
 
 .group:hover .group-hover\:text-emerald-600 {
-    color: var(--emerald-600);
+    color: var(--text-accessible-emerald);
 }
 
 .group:hover .group-hover\:text-amber-600 {
-    color: var(--amber-600);
+    color: var(--text-accessible-amber);
 }
 
 .group:hover .group-hover\:text-orange-600 {
-    color: var(--orange-600);
+    color: var(--text-accessible-orange);
 }
 
 .group:hover .group-hover\:text-red-600 {
@@ -1391,7 +1407,7 @@ a {
 }
 
 .group:hover .group-hover\:text-cyan-600 {
-    color: var(--cyan-600);
+    color: var(--text-accessible-cyan);
 }
 
 .group:hover .group-hover\:opacity-100 {
