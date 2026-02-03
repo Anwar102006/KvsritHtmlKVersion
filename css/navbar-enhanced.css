@@ -1,0 +1,631 @@
+/* ========================================
+   KVSRIT Navbar Enhanced Styling
+   Professional College Website Navbar
+   ======================================== */
+
+/* ========================================
+   CSS CUSTOM PROPERTIES FOR NAVBAR
+   ======================================== */
+:root {
+    /* Navbar specific colors */
+    --nav-bg: #ffffff;
+    --nav-text: #374151;
+    --nav-text-hover: #2563eb;
+    --nav-accent: #2563eb;
+    --nav-accent-dark: #1d4ed8;
+    --nav-border: #e5e7eb;
+    --nav-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    /* Top bar colors */
+    --topbar-bg: #1e3a8a;
+    --topbar-text: rgba(255, 255, 255, 0.9);
+    --topbar-hover: #60a5fa;
+
+    /* Dropdown colors */
+    --dropdown-bg: #ffffff;
+    --dropdown-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+    --dropdown-border: rgba(0, 0, 0, 0.05);
+    --dropdown-hover-bg: #eff6ff;
+    --dropdown-accent-border: #2563eb;
+
+    /* Transition timing */
+    --nav-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   TOP CONTACT BAR IMPROVEMENTS
+   ======================================== */
+
+/* Enhanced top bar background and spacing */
+.bg-blue-900.text-white.py-2.text-xs {
+    background: linear-gradient(135deg, var(--topbar-bg) 0%, #1e40af 100%);
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    letter-spacing: 0.025em;
+}
+
+/* Top bar container - better centering */
+.bg-blue-900>.max-w-7xl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Top bar items with icons - better alignment */
+.bg-blue-900 .flex.items-center.gap-1 {
+    gap: 0.5rem;
+    transition: color var(--nav-transition);
+}
+
+/* Top bar icon styling */
+.bg-blue-900 .flex.items-center.gap-1 svg,
+.bg-blue-900 .flex.items-center.gap-1 i {
+    opacity: 0.85;
+}
+
+/* Top bar links spacing */
+.bg-blue-900 .flex.items-center.gap-4 {
+    gap: 1.25rem;
+}
+
+/* Top bar link hover effects */
+.bg-blue-900 a {
+    position: relative;
+    padding-bottom: 2px;
+    transition: color var(--nav-transition), opacity var(--nav-transition);
+}
+
+.bg-blue-900 a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--topbar-hover);
+    transition: width var(--nav-transition);
+}
+
+.bg-blue-900 a:hover {
+    color: var(--topbar-hover);
+}
+
+.bg-blue-900 a:hover::after {
+    width: 100%;
+}
+
+/* Top bar separator styling */
+.bg-blue-900 .text-gray-500 {
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0 0.25rem;
+}
+
+/* ========================================
+   MAIN NAVIGATION IMPROVEMENTS
+   ======================================== */
+
+/* Enhanced main nav with better shadow */
+#main-nav {
+    background: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
+    border-bottom: 1px solid var(--nav-border);
+    transition: box-shadow var(--nav-transition), background var(--nav-transition);
+}
+
+/* Compact mode on scroll (if applied via JS) */
+#main-nav.scrolled {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav inner container - consistent height */
+#nav-inner {
+    height: 4.5rem;
+    transition: height var(--nav-transition);
+}
+
+/* Logo area improvements */
+#main-nav .flex-shrink-0 a {
+    transition: opacity var(--nav-transition);
+}
+
+#main-nav .flex-shrink-0 a:hover {
+    opacity: 0.9;
+}
+
+/* Logo image sizing */
+#main-nav .flex-shrink-0 img {
+    height: 3.25rem;
+    width: auto;
+    transition: transform var(--nav-transition);
+}
+
+#main-nav .flex-shrink-0 a:hover img {
+    transform: scale(1.02);
+}
+
+/* College name text */
+#main-nav .flex-shrink-0 h1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--topbar-bg);
+}
+
+#main-nav .flex-shrink-0 p {
+    font-size: 0.625rem;
+    color: #6b7280;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   DESKTOP MENU ITEM IMPROVEMENTS
+   ======================================== */
+
+/* Desktop menu container - equal spacing */
+#main-nav .hidden.xl\\:flex {
+    gap: 0.25rem;
+}
+
+/* Menu items - consistent styling */
+#main-nav .hidden.xl\\:flex>a,
+#main-nav .hidden.xl\\:flex>div>button {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--nav-text);
+    position: relative;
+    transition: color var(--nav-transition), background-color var(--nav-transition);
+    border-radius: 0.5rem;
+}
+
+/* Menu item hover state */
+#main-nav .hidden.xl\\:flex>a:hover,
+#main-nav .hidden.xl\\:flex>div:hover>button {
+    color: var(--nav-text-hover);
+    background-color: var(--dropdown-hover-bg);
+}
+
+/* Animated underline on hover */
+#main-nav .hidden.xl\\:flex>a::before,
+#main-nav .hidden.xl\\:flex>div>button::before {
+    content: '';
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 1.25rem;
+    height: 2px;
+    background: var(--nav-accent);
+    border-radius: 1px;
+    transition: transform var(--nav-transition);
+}
+
+#main-nav .hidden.xl\\:flex>a:hover::before,
+#main-nav .hidden.xl\\:flex>div:hover>button::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Active menu item highlight */
+#main-nav .hidden.xl\\:flex>a.text-blue-600,
+#main-nav .hidden.xl\\:flex>div>button.text-blue-600 {
+    color: var(--nav-accent);
+    font-weight: 600;
+}
+
+#main-nav .hidden.xl\\:flex>a.text-blue-600::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Chevron icon rotation */
+#main-nav .hidden.xl\\:flex [data-lucide="chevron-down"] {
+    transition: transform var(--nav-transition);
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-left: 0.25rem;
+}
+
+#main-nav .hidden.xl\\:flex div:hover [data-lucide="chevron-down"] {
+    transform: rotate(180deg);
+}
+
+/* ========================================
+   DROPDOWN MENU IMPROVEMENTS
+   ======================================== */
+
+/* All dropdown containers - base styles */
+#main-nav [role="menu"] {
+    background: var(--dropdown-bg);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.12),
+        0 2px 10px rgba(0, 0, 0, 0.06);
+    padding: 0.625rem;
+    margin-top: 0.25rem;
+
+    /* Animation properties */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px) scale(0.98);
+    transform-origin: top center;
+    transition:
+        opacity 0.2s ease-out,
+        visibility 0.2s ease-out,
+        transform 0.2s ease-out;
+}
+
+/* Dropdown visible state */
+#main-nav div:hover>[role="menu"],
+#main-nav [data-dropdown]:hover>[role="menu"] {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* Simple dropdown inner container */
+#main-nav [role="menu"]>.py-2 {
+    padding: 0.25rem 0;
+}
+
+/* Simple dropdown items (About, Admissions, etc.) */
+#main-nav [role="menu"]:not([class*="w-[640px]"]) a {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--nav-text);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    position: relative;
+    border-left: 3px solid transparent;
+    margin: 0.125rem 0;
+}
+
+/* Simple dropdown item hover */
+#main-nav [role="menu"]:not([class*="w-[640px]"]) a:hover {
+    background-color: var(--dropdown-hover-bg);
+    color: var(--nav-accent);
+    padding-left: 1.25rem;
+    border-left-color: var(--nav-accent);
+}
+
+/* ========================================
+   MEGA MENU (Departments) - COMPLETE FIX
+   ======================================== */
+
+/* Mega menu container - proper width and positioning */
+#main-nav [role="menu"][class*="w-[640px]"] {
+    width: 680px !important;
+    padding: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px) scale(0.98);
+    border-radius: 1.25rem;
+}
+
+/* Mega menu visible state */
+#main-nav [data-dropdown]:hover>[role="menu"][class*="w-[640px]"] {
+    transform: translateX(-50%) translateY(0) scale(1);
+}
+
+/* Mega menu grid - proper 2-column layout */
+#main-nav [role="menu"][class*="w-[640px]"] .grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.625rem !important;
+}
+
+/* Mega menu department cards */
+#main-nav [role="menu"][class*="w-[640px]"] a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.875rem;
+    padding: 1rem 1rem;
+    border-radius: 0.875rem;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: all 0.2s ease;
+    min-width: 0;
+    /* Prevent flex overflow */
+}
+
+/* Department card hover */
+#main-nav [role="menu"][class*="w-[640px]"] a:hover {
+    background-color: var(--dropdown-hover-bg);
+    border-color: rgba(37, 99, 235, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+/* Department icon container */
+#main-nav [role="menu"][class*="w-[640px]"] .w-9 {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    min-width: 2.5rem;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Icon hover effect */
+#main-nav [role="menu"][class*="w-[640px]"] a:hover .w-9 {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Department text container */
+#main-nav [role="menu"][class*="w-[640px]"] a>div:last-child {
+    flex: 1;
+    min-width: 0;
+    /* Allow text truncation */
+    overflow: hidden;
+}
+
+/* Department name styling */
+#main-nav [role="menu"][class*="w-[640px]"] .text-sm.font-semibold {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.125rem;
+}
+
+/* Department subtitle (B.Tech, PG, etc.) */
+#main-nav [role="menu"][class*="w-[640px]"] [class*="text-[11px]"] {
+    font-size: 0.6875rem;
+    color: #6b7280;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/* Hover text color change */
+#main-nav [role="menu"][class*="w-[640px]"] a:hover .text-sm.font-semibold {
+    color: var(--nav-accent);
+}
+
+/* ========================================
+   RIGHT ACTIONS (SEARCH, PORTAL, APPLY)
+   ======================================== */
+
+/* Right actions container */
+#main-nav .flex.items-center.gap-2.pl-2.ml-2 {
+    gap: 0.75rem;
+    padding-left: 1rem;
+    margin-left: 0.75rem;
+    border-left: 1px solid var(--nav-border);
+}
+
+/* Student Portal button */
+#main-nav a[href*="student-portal"] {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--nav-border);
+    border-radius: 2rem;
+    color: var(--nav-text);
+    transition:
+        background-color var(--nav-transition),
+        border-color var(--nav-transition),
+        color var(--nav-transition);
+}
+
+#main-nav a[href*="student-portal"]:hover {
+    background-color: var(--dropdown-hover-bg);
+    border-color: var(--nav-accent);
+    color: var(--nav-accent);
+}
+
+/* Search button */
+#main-nav #search-btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition:
+        background-color var(--nav-transition),
+        color var(--nav-transition),
+        transform var(--nav-transition);
+}
+
+#main-nav #search-btn:hover {
+    background-color: var(--dropdown-hover-bg);
+    color: var(--nav-accent);
+    transform: scale(1.05);
+}
+
+/* Apply Now button - enhanced styling */
+#main-nav a[href="admissions.html"].bg-blue-600 {
+    background: linear-gradient(135deg, var(--nav-accent) 0%, var(--nav-accent-dark) 100%);
+    color: white;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
+    transition:
+        transform var(--nav-transition),
+        box-shadow var(--nav-transition),
+        background var(--nav-transition);
+}
+
+#main-nav a[href="admissions.html"].bg-blue-600:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+    background: linear-gradient(135deg, #3b82f6 0%, var(--nav-accent) 100%);
+}
+
+#main-nav a[href="admissions.html"].bg-blue-600:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   MOBILE MENU IMPROVEMENTS
+   ======================================== */
+
+/* Mobile menu button */
+#mobile-menu-btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color var(--nav-transition), color var(--nav-transition);
+}
+
+#mobile-menu-btn:hover {
+    background-color: var(--dropdown-hover-bg);
+    color: var(--nav-accent);
+}
+
+/* Mobile menu container */
+#mobile-menu {
+    background: var(--nav-bg);
+    border-top: 1px solid var(--nav-border);
+    padding: 1rem;
+
+    /* Animation */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s ease,
+        padding 0.3s ease;
+}
+
+/* Mobile menu visible state */
+#mobile-menu:not(.hidden) {
+    max-height: 500px;
+    opacity: 1;
+    padding: 1rem;
+}
+
+/* Mobile menu items */
+#mobile-menu a {
+    display: block;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--nav-text);
+    border-radius: 0.75rem;
+    transition:
+        background-color var(--nav-transition),
+        color var(--nav-transition),
+        padding-left var(--nav-transition);
+    border-left: 3px solid transparent;
+    margin-bottom: 0.25rem;
+}
+
+#mobile-menu a:hover {
+    background-color: var(--dropdown-hover-bg);
+    color: var(--nav-accent);
+    padding-left: 1.25rem;
+    border-left-color: var(--nav-accent);
+}
+
+/* Mobile Apply Now button */
+#mobile-menu a.bg-blue-600 {
+    background: linear-gradient(135deg, var(--nav-accent) 0%, var(--nav-accent-dark) 100%);
+    color: white;
+    text-align: center;
+    border-radius: 0.75rem;
+    border-left: none;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+#mobile-menu a.bg-blue-600:hover {
+    padding-left: 1rem;
+    opacity: 0.95;
+}
+
+/* ========================================
+   SEARCH OVERLAY IMPROVEMENTS
+   ======================================== */
+
+/* Search overlay backdrop */
+#search-overlay {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* Search modal */
+#search-overlay>div {
+    background: var(--dropdown-bg);
+    border-radius: 1rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--dropdown-border);
+    transform: translateY(-10px);
+    opacity: 0;
+    transition:
+        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s ease;
+}
+
+#search-overlay:not(.hidden)>div {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Search input styling */
+#search-input {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--nav-text);
+    padding: 0.5rem 0;
+    border: none;
+    outline: none;
+}
+
+#search-input::placeholder {
+    color: #9ca3af;
+}
+
+/* Search close button */
+#search-close {
+    transition:
+        background-color var(--nav-transition),
+        color var(--nav-transition),
+        transform var(--nav-transition);
+}
+
+#search-close:hover {
+    background-color: #fee2e2;
+    color: #dc2626;
+    transform: rotate(90deg);
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1279px) {
+    #nav-inner {
+        height: 4rem;
+    }
+
+    #main-nav .flex-shrink-0 img {
+        height: 2.75rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1280px) {
+    #nav-inner {
+        height: 5rem;
+    }
+
+    #main-nav .flex-shrink-0 img {
+        height: 3.5rem;
+    }
+}
+
+/* Print styles - hide navbar elements */
+@media print {
+
+    #main-nav,
+    .bg-blue-900.text-white {
+        display: none !important;
+    }
+}
